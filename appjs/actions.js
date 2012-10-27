@@ -7,9 +7,6 @@ function get_device_info(){
 	$('#device table td').eq(7).text(device.uuid);
 }
 
-$(document).ready(function(e) {
-
-    document.addEventListener('deviceready', function (){
+$(document).bind('deviceready', function (){
 	get_device_info();	
-	},false);
-});
+	});
