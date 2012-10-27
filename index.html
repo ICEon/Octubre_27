@@ -30,6 +30,7 @@
                 // Orientation callback event
                 $('#jqt').bind('turn', function(e, data){
                     $('#orient').html('Orientation: ' + data.orientation);
+                    $('#prueba').text(device.phonegap);
                 });
                 
             });
@@ -66,7 +67,7 @@
                     <p>         <b> <em> Demostraci&oacute;n</em></b></p>
                     <p> Informaci&oacute;n del dispositivo</p>
                     
-                    
+                    <p id ="prueba"> </p>
                     
                     <p><br><br><a href="#" class="grayButton goback">Close</a></p>
             </div>
